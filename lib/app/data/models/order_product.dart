@@ -18,8 +18,8 @@ class OrderProductModel {
   factory OrderProductModel.fromJson(Map<String, dynamic> json) =>
       OrderProductModel(
         product: ProductModel.fromJson(json['produto']),
-        quantity: json['quantidade'],
-        value: json['valor'],
+        quantity: num.parse(json['quantidade']),
+        value: num.parse(json['valor']),
         observation: json['observacao'],
       );
 }

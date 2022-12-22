@@ -32,8 +32,8 @@ class OrderModel {
   factory OrderModel.fromJson(Map<String, dynamic> json) => OrderModel(
       hashId: json['hash_id'],
       store: StoreModel.fromJson(json['estabelecimento']),
-      value: json['valor'],
-      deliveryCost: json['custo_entrega'],
+      value: num.parse(json['valor']),
+      deliveryCost: num.parse(json['custo_entrega']),
       address: json['endereco'] == null
           ? null
           : AddressModel.fromJson(json['endereco']),

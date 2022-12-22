@@ -13,6 +13,6 @@ class ShippingByCityModel {
       ShippingByCityModel(
         id: json['id'],
         cidade: json['cidade'] /*?? "Medianeira"*/,
-        cost: json['custo_entrega'],
+        cost: num.parse(json['custo_entrega']),
       );
 }

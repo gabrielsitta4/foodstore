@@ -20,7 +20,7 @@ class Api extends GetConnect {
 
   @override
   void onInit() {
-    httpClient.baseUrl = 'http://192.168.0.155:3333/';
+    httpClient.baseUrl = 'http://10.52.90.156:3333/';
 
     httpClient.addRequestModifier((Request request) {
       request.headers['Accept'] = 'application/json';
